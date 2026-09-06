@@ -1,3 +1,6 @@
+
+
+import MapView from "../../components/maps/MapView";
 import { motion, AnimatePresence } from "motion/react";
 import { Link } from "react-router-dom";
 import {
@@ -405,6 +408,36 @@ export default function Landing() {
           </div>
         </div>
       </section>
+      
+
+{/* GIS MAP */}
+<section className="bg-slate-50 border-y border-slate-200">
+  <div className="max-w-7xl mx-auto px-6 py-20">
+
+    <div className="max-w-3xl mx-auto text-center">
+      <div className="text-xs font-semibold tracking-wider text-brand-600 uppercase">
+        GIS Civic Intelligence
+      </div>
+
+      <h2 className="mt-2 text-3xl md:text-4xl font-extrabold text-slate-900 tracking-tight">
+        Explore Civic Issues on the Map
+      </h2>
+
+      <p className="mt-3 text-slate-600">
+        View reported civic problems, their locations and current
+        status through our interactive GIS-powered map.
+      </p>
+    </div>
+
+    <div className="mt-10">
+      <MapView height="600px" />
+    </div>
+
+  </div>
+</section>
+
+{/* FEATURES */}
+<section className="max-w-7xl mx-auto px-6 py-20"></section>
 
       {/* FEATURES */}
       <section className="max-w-7xl mx-auto px-6 py-20">
